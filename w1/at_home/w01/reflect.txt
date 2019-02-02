@@ -1,0 +1,5 @@
+While completing this workshop I learned to login to a remote host using
+Putty at home and transfer the source code I wrote in Visual Studio. 
+I also learned to create, write and save code in a file using nled command in
+Matrix. Last but not the least, I also learned to run and compile a solution
+in matrix with the gcc command.
