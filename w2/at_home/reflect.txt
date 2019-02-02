@@ -1,0 +1,12 @@
+1. Knowing what is a floating point exception and being able to fix it with 'if statement' is the
+   most importang thing I learned in this workshop.
+
+2. C standard compilers like  matrix do not round off numbers that is why I must add .005
+   to round up the value when calculating the GST owing.
+
+3. Casting an operation converts the type of a function and the variable.
+
+4. I think the reason we were required to use the modulus operator in this workshop is not only
+   to learn how to use it but also to learn that modding a number to 0 will give you a floating
+   point exception error.
+    

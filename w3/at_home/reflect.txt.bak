@@ -1,0 +1,4 @@
+1) while, do while, for
+2) Do while loop will perform a code block first before reading the condition.
+The while loop will read the condition, then executes the code block if true.
+3) 

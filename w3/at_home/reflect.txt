@@ -1,0 +1,9 @@
+1) while, do while, for
+
+2) Do while loop will perform a code block first before reading the condition.
+   The while loop will read the condition, then executes the code block if true.
+
+3) The term conditional expression is an expression where the sequence of code
+   will be repeated until the specific term or boundary is met.
+   It is also known as the loop which is a method required to complete
+   this workshop.      

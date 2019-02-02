@@ -1,0 +1,64 @@
+// Name: Kirby Lim
+// Student Number: 131684177    
+// Email: klim18@myseneca.ca
+// Section: h
+// Workshop: 3
+
+#define _CRT_SECURE_NO_WARNINGS
+
+// Put your code below:
+#define NUMS 4
+#include <stdio.h>
+
+
+int main(void) {
+
+	printf("---=== IPC Temperature Analyzer ===---");
+	int i, high, low, totalLow = 41, totalHigh = -41, dayL = 0, dayH = 0;
+	float avg = 0;
+
+
+	for (i = 1; i <= NUMS; i++)
+	{
+
+		printf("\nEnter the high value for day %d: ", i);
+		scanf("%d", &high);
+
+
+		printf("\nEnter the low value for day %d: ", i);
+		scanf("%d", &low);
+
+		while (high > totalHigh)
+		{
+			totalHigh = high;
+			dayH = i;
+		}
+		while (low < totalLow)
+		{
+			totalLow = low;
+			dayL = i;
+		}
+
+
+
+		if ((high < low) || (high > 40) || (high < -40) || (low > 40) || (low < -40))
+		{
+			printf("\nIncorrect values, temperatures must be in the range -40 to 40, high must be greater than low.\n");
+			i--;
+		}
+		else {
+			avg = (low + high) + avg;
+
+		}
+
+	}
+	avg = avg / (2 * NUMS);
+	printf("\nThe average (mean) temperature was: %.2f\n", avg);
+	printf("The highest temperature was %d, on day %d", totalHigh, dayH);
+	printf("\nThe lowest temperature was %d, on day %d\n", totalLow, dayL);
+       
+
+	return 0;
+
+
+}

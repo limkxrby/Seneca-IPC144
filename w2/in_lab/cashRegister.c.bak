@@ -1,0 +1,25 @@
+/*
+	Name: Kirby Lim
+	Student#: 131684177
+	Section: H
+*/
+
+#include <stdio.h>
+
+int main(void)
+{
+	int loonies, quarters;
+	float number, balance, newbalance;
+
+	printf("Please enter the amount to be paid: $");
+	scanf("%f", &number);
+
+	loonies = (int)number;
+	balance = number - loonies;
+	quarters = balance / 0.25;
+	newbalance = balance - (quarters * 0.25);
+
+	printf("Loonies required: %d, balance owing $%.2f\n", loonies, balance);
+	printf("Quarters required: %d, balance owing$%.2f\n", quarters, newbalance);
+	return 0;
+}
